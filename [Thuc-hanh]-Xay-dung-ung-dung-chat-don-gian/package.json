@@ -1,0 +1,7 @@
+{
+  "name": "[Thuc-hanh]-Xay-dung-ung-dung-chat-don-gian",
+  "version": "1.0.0",
+  "dependencies": {
+    "socket.io": "^4.5.1"
+  }
+}
