@@ -1,0 +1,14 @@
+{
+  "name": "chat_online",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "dependencies": {
+    "socket.io": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

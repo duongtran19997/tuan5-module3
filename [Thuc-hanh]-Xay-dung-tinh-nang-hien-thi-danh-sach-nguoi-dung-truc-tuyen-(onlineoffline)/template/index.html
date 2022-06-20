@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../public/style.css">
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="App">
+    <aside class="sidebar">
+        <section class="join-chat">
+            <h2>Join Chat</h2>
+        </section>
+        <section class="online-members">
+            <h2>Room Users</h2>
+            <ul class="user-list" id="users-show">
+            </ul>
+        </section>
+    </aside>
+    <main class="chat-window">
+        <header class="chat-header">
+            <h1>Chat</h1>
+            <span class="participants"></span>
+        </header>
+        <section class="chat-session">
+            <ul class="message-list">
+                <li class="user-message">
+                    <span class="user-id"></span>
+                    <span></span>
+                </li>
+            </ul>
+        </section>
+        <footer class="chat-footer">
+            <form>
+                <input placeholder="Type a message. Hit Enter to send" type="text" name="message">
+            </form>
+        </footer>
+    </main>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../public/script.js"></script>
+</body>
+</html>
