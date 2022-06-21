@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
     const urlPath = url.parse(req.url, true, true).pathname;
     if (urlPath === '/') {
         res.writeHead(200, {'content-type': 'text/html'});
-        fs.createReadStream('/template/index.html').pipe(res);
+        fs.createReadStream('./template/index.html').pipe(res);
         /* đọc file css/js*/
         const filesDefences = req.url.match(/\.js|.css/);
         if (filesDefences) {
