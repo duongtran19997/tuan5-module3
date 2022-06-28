@@ -28,6 +28,8 @@ const users = {}
 
 io.on('connection', socket => {
     socket.on('new-user', name => {
+        // users[name]=name
+        // users[socket_id]=socket.id
         users[socket.id] = name
         socket.broadcast.emit('user-connected', name)
     })
